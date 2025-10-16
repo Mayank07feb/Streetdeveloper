@@ -9,10 +9,11 @@
     <nav class="flex items-center justify-between w-full relative">
 
       <!-- Logo -->
-      <a class="flex items-center lg:py-2 py-3 mr-5 font-montserrat font-bold text-xl text-gray-900" href="/">
-        <img src="/assets/img/logo.png" alt="Street-Developer Logo" class="lg:h-10 h-9 mr-2" loading="eager">
+      <a class="flex items-center lg:py-4 py-3 mr-5 font-montserrat font-bold text-xl text-gray-900" href="/">
+        <img src="/assets/img/logo.png" alt="Street-Developer Logo" class="lg:h-14 h-12 mr-2" loading="eager">
         STREET DEVELOPER
       </a>
+
 
       <!-- Menu -->
       <div
@@ -39,26 +40,26 @@
         <ul
           class="flex flex-col lg:flex-row lg:gap-6 gap-1 font-montserrat lg:font-semibold font-medium text-[17px] text-gray-900">
           <li>
-            <a class="flex items-center lg:justify-normal justify-between gap-1 lg:py-8 py-2" href="/">Home</a>
+            <a class="nav-link flex items-center lg:justify-normal justify-between gap-1 lg:py-10 py-2" href="/">Home</a>
           </li>
           <!-- <li>
-            <a class="flex items-center lg:justify-normal justify-between gap-1 lg:py-8 py-2" href="/services">Services</a>
+            <a class="nav-link flex items-center lg:justify-normal justify-between gap-1 lg:py-10 py-2" href="/services">Services</a>
           </li> -->
           <!-- <li>
-            <a class="flex items-center lg:justify-normal justify-between gap-1 lg:py-8 py-2" href="/projects">Projects</a>
+            <a class="nav-link flex items-center lg:justify-normal justify-between gap-1 lg:py-10 py-2" href="/projects">Projects</a>
           </li> -->
           <li>
-            <a class="flex items-center lg:justify-normal justify-between gap-1 lg:py-8 py-2" href="/about">About</a>
+            <a class="nav-link flex items-center lg:justify-normal justify-between gap-1 lg:py-10 py-2" href="/about">About</a>
           </li>
           <li>
-            <a class="flex items-center lg:justify-normal justify-between gap-1 lg:py-8 py-2"
+            <a class="nav-link flex items-center lg:justify-normal justify-between gap-1 lg:py-10 py-2"
               href="/products">Products</a>
           </li>
           <li>
-            <a class="flex items-center lg:justify-normal justify-between gap-1 lg:py-8 py-2" href="/review">Review</a>
+            <a class="nav-link flex items-center lg:justify-normal justify-between gap-1 lg:py-10 py-2" href="/review">Review</a>
           </li>
           <li>
-            <a class="flex items-center lg:justify-normal justify-between gap-1 lg:py-8 py-2"
+            <a class="nav-link flex items-center lg:justify-normal justify-between gap-1 lg:py-10 py-2"
               href="/contact">Contact</a>
           </li>
         </ul>
@@ -109,7 +110,7 @@
 
     <!-- Header -->
     <h2 class="text-2xl font-bold text-gray-900 mb-4 text-center">Get in Touch</h2>
-    <p class="text-gray-500 mb-6 text-center text-sm md:text-base">Fill out the form below and we’ll get back to
+    <p class="text-gray-500 mb-6 text-center text-sm md:text-base">Fill out the form below and we'll get back to
       you shortly.</p>
 
     <!-- Form -->
@@ -165,6 +166,34 @@
   .animate-modalShow {
     animation: modalShow 0.3s ease-out forwards;
   }
+
+  .nav-link {
+    transition: all 0.2s ease;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .nav-link.active {
+    background-color: #186fbc;
+    color: white;
+    border-radius: 0.5rem;
+  }
+
+  @media (max-width: 1023px) {
+    .nav-link {
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    
+    .nav-link.active {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
 </style>
 <script>
   // Select all "Enquiry Now" buttons (mobile + desktop)
@@ -213,4 +242,15 @@
   if (menuClose) menuClose.addEventListener('click', closeMenu);
   if (menuOverlay) menuOverlay.addEventListener('click', closeMenu);
   window.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
+
+  // ===== Active Nav Link =====
+  const currentPath = window.location.pathname;
+  const navLinks = document.querySelectorAll('.nav-link');
+  
+  navLinks.forEach(link => {
+    const linkPath = new URL(link.href).pathname;
+    if (linkPath === currentPath) {
+      link.classList.add('active');
+    }
+  });
 </script>

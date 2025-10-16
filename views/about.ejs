@@ -1,8 +1,8 @@
 <div>
-  <!-- page title -->
+  <!-- Page Title -->
   <div class="page-title bg-light-blue-banner lg:pt-20 pt-16 border-b border-gray-800">
     <div class="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-14 lg:px-14 xl:px-20 2xl:px-24 lg:py-24 py-16">
-      <!-- title -->
+      <!-- Title -->
       <div class="flex justify-center">
         <div class="w-full lg:w-7/12 text-center">
           <div class="flex flex-row justify-center mx-auto">
@@ -13,7 +13,7 @@
                 stroke-linecap="round" stroke-linejoin="round" class="text-current">
                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
               </svg>
-              Our Customer Feedback
+              About Us
             </div>
           </div>
           <h1
@@ -29,6 +29,7 @@
       </div>
     </div>
   </div>
+
 
   <!-- about-wrap -->
   <div class="about-wrap lg:py-20 py-16">
@@ -167,142 +168,137 @@
   </div>
 
 
-  <!-- FAQ Section -->
-  <section class="faq-wrap font-montserrat lg:py-24 py-12 bg-gradient-to-b from-gray-100 to-white">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 lg:px-14">
-      <div class="grid grid-cols-1 lg:grid-cols-12 xl:gap-20 gap-10">
-
-        <!-- Left Content -->
-        <div class="lg:col-span-5 flex flex-col text-start">
-          <div class="flex">
-            <span
-              class="px-3 py-1 border border-primary shadow-sm rounded-lg text-[13px] font-semibold uppercase text-primary bg-white flex items-center gap-2">
-              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"
-                stroke-linecap="round" stroke-linejoin="round" class="text-primary">
-                <circle cx="12" cy="12" r="10"></circle>
-                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-                <line x1="12" y1="17" x2="12.01" y2="17"></line>
-              </svg>
-              Frequently Asked Questions
-            </span>
+ <!-- faq wrap -->
+<div class="faq-wrap font-montserrat lg:py-24 py-16 bg-[linear-gradient(to_bottom,#f8f8f8,#fff)]">
+  <div class="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-14 lg:px-14 xl:px-18 2xl:px-3">
+    <div class="grid lg:grid-cols-12 xl:gap-24 gap-6 relative lg:space-y-0 space-y-5">
+      <div class="lg:col-span-6 text-start flex flex-col pe-lg-5">
+        <div class="flex flex-row">
+          <div
+            class="px-3 py-1 border border-gray-200 shadow-sm rounded-lg text-[13px] font-medium uppercase text-gray-900 bg-white items-center gap-2 flex w-auto"
+            data-aos="zoom-in" data-aos-delay="0" data-aos-duration="400">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg> Frequently Asked Questions
           </div>
-
-
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl text-gray-900 font-semibold mb-3 lg:mb-4 mt-4">
-            Have questions? Here are some answers
-          </h2>
-          <p class="text-gray-700 font-normal leading-relaxed">
-            At <strong>Developer’s Street</strong>, we help startups, SMEs, and enterprises with web and
-            mobile app solutions. Here are answers to the most common queries our clients ask before
-            starting their projects.
-          </p>
         </div>
+        <h2 class="md:text-4xl text-3xl 2xl:text-5xl text-gray-900 font-semibold mb-3 lg:mb-4 mt-4" data-aos="fade-up"
+          data-aos-delay="200" data-aos-duration="400">Have questions about our products? Here are some answers</h2>
+        <p class="text-gray-800 font-normal text-[17px] lg:pr-16 mb-6" data-aos="fade-up" data-aos-delay="200"
+          data-aos-duration="400">We provide high-quality products designed to make your daily workflow easier and more efficient. Explore answers to common questions below.</p>
+        <div class="mt-auto" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">
+          <a href="/products"
+            class="inline-flex items-center justify-center gap-2 px-5 py-3 text-white text-base font-medium bg-primary hover:bg-primary-hover rounded-lg shadow-md transition duration-300"
+            data-aos="zoom-in" data-aos-duration="400">
+            <span>Explore Products</span>
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"
+              stroke-linecap="round" stroke-linejoin="round" class="text-white">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
 
-        <!-- Right FAQ Accordion -->
-        <div class="lg:col-span-7 flex flex-col">
-          <div class="space-y-4" id="accordion">
+      <div class="lg:col-span-6 text-start flex flex-col 2xl:pl-16">
+        <div class="space-y-4" id="accordion">
 
-            <!-- Q1 -->
-            <div class="border border-gray-200 bg-white rounded-lg shadow-md">
-              <button
-                class="accordion-header w-full flex justify-between items-center px-5 py-4 text-left text-gray-900 font-medium focus:outline-none">
-                <span class="text-base sm:text-lg">Q1. What services does Developer’s Street provide?</span>
-                <svg class="accordion-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              <div class="accordion-content px-5 pt-3 pb-4 text-gray-700 text-sm sm:text-base leading-7">
-                We specialize in <strong>custom web development, mobile app development, SaaS solutions,
-                  e-commerce platforms, and enterprise applications</strong>. Our team ensures scalable, secure,
-                and performance-driven digital products.
-              </div>
+          <!-- Accordion Item 1 -->
+          <div class="border border-gray-200 bg-white rounded-lg shadow-md">
+            <button
+              class="accordion-header w-full flex justify-between items-center px-5 py-4 text-left text-gray-900 font-medium focus:outline-none">
+              <span class="text-lg">Q1. What types of products do you offer?</span>
+              <svg class="accordion-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="accordion-content px-5 pt-3 pb-4 text-gray-900 text-[17px] font-normal leading-7 ">
+              We offer a range of software and hardware products designed to improve productivity, collaboration, and overall efficiency for businesses and individual users.
             </div>
-
-            <!-- Q2 -->
-            <div class="border border-gray-200 bg-white rounded-lg shadow-md">
-              <button
-                class="accordion-header w-full flex justify-between items-center px-5 py-4 text-left text-gray-900 font-medium focus:outline-none">
-                <span class="text-base sm:text-lg">Q2. How much does a web or mobile app project cost?</span>
-                <svg class="accordion-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              <div class="accordion-content px-5 pt-3 pb-4 text-gray-700 text-sm sm:text-base leading-7 hidden">
-                The cost depends on project scope, features, and technology stack. We provide
-                <strong>transparent pricing with flexible engagement models</strong>, whether it’s a startup MVP,
-                SaaS platform, or enterprise app.
-              </div>
-            </div>
-
-            <!-- Q3 -->
-            <div class="border border-gray-200 bg-white rounded-lg shadow-md">
-              <button
-                class="accordion-header w-full flex justify-between items-center px-5 py-4 text-left text-gray-900 font-medium focus:outline-none">
-                <span class="text-base sm:text-lg">Q3. How long will it take to develop my project?</span>
-                <svg class="accordion-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              <div class="accordion-content px-5 pt-3 pb-4 text-gray-700 text-sm sm:text-base leading-7 hidden">
-                Project timelines vary based on complexity and requirements. A
-                <strong>basic website may take 3–4 weeks</strong>, while a full-scale SaaS or e-commerce solution can
-                take several months. We follow agile methods for faster delivery.
-              </div>
-            </div>
-
-            <!-- Q4 -->
-            <div class="border border-gray-200 bg-white rounded-lg shadow-md">
-              <button
-                class="accordion-header w-full flex justify-between items-center px-5 py-4 text-left text-gray-900 font-medium focus:outline-none">
-                <span class="text-base sm:text-lg">Q4. Do you provide ongoing support and maintenance?</span>
-                <svg class="accordion-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              <div class="accordion-content px-5 pt-3 pb-4 text-gray-700 text-sm sm:text-base leading-7 hidden">
-                Yes. We provide <strong>post-launch support, performance monitoring, updates, and maintenance</strong>
-                to
-                ensure your application runs smoothly and keeps up with technology upgrades.
-              </div>
-            </div>
-
           </div>
+
+          <!-- Accordion Item 2 -->
+          <div class="border border-gray-200 bg-white rounded-lg shadow-md">
+            <button
+              class="accordion-header w-full flex justify-between items-center px-5 py-4 text-left text-gray-900 font-medium focus:outline-none">
+              <span class="text-lg">Q2. How long does shipping take?</span>
+              <svg class="accordion-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="accordion-content px-5 pt-3 pb-4 text-gray-900 text-[17px] font-normal leading-7 hidden">
+              Shipping typically takes 3-7 business days depending on your location and product availability. We also provide tracking for all orders.
+            </div>
+          </div>
+
+          <!-- Accordion Item 3 -->
+          <div class="border border-gray-200 bg-white rounded-lg shadow-md">
+            <button
+              class="accordion-header w-full flex justify-between items-center px-5 py-4 text-left text-gray-900 font-medium focus:outline-none">
+              <span class="text-lg">Q3. Can I return a product if I'm not satisfied?</span>
+              <svg class="accordion-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="accordion-content px-5 pt-3 pb-4 text-gray-900 text-[17px] font-normal leading-7 hidden">
+              Yes! We offer a 30-day return policy for most products. Simply contact our support team to initiate a return.
+            </div>
+          </div>
+
+          <!-- Accordion Item 4 -->
+          <div class="border border-gray-200 bg-white rounded-lg shadow-md">
+            <button
+              class="accordion-header w-full flex justify-between items-center px-5 py-4 text-left text-gray-900 font-medium focus:outline-none">
+              <span class="text-lg">Q4. Do your products come with a warranty?</span>
+              <svg class="accordion-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="accordion-content px-5 pt-3 pb-4 text-gray-900 text-[17px] font-normal leading-7 hidden">
+              All products come with a standard 1-year warranty. Extended warranty options are available for select products.
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
-  </section>
-  <!-- faq wrapper -->
+  </div>
+</div>
+<!-- faq wrap -->
 
-  <!-- cta wrapper -->
+
+  <!-- CTA Wrapper -->
   <div class="lg:py-24 py-12 relative overflow-hidden bg-home-one-gradient-banner font-montserrat">
     <img src="dist/images/svg/svg-diagram-1.html" alt="diagram" class="absolute left-0 -top-8 hidden lg:block w-[250px]"
       loading="lazy">
-    <!-- <img src="dist/images/svg/svg-diagram-1.html" alt="diagram"
-      class="absolute right-0 bottom-5 hidden lg:block w-[250px] rotate-180" loading="lazy"> -->
+
     <div class="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-14 lg:px-14 xl:px-18 2xl:px-3 pb-0 lg:py-4 py-0">
 
       <!-- Centered CTA Content -->
       <div class="flex flex-col items-center text-center font-montserrat xl:w-1/2 lg:w-2/3 mx-auto">
         <h2 class="lg:text-5xl md:text-4xl text-3xl font-semibold tracking-tighter text-gray-900 mb-4"
           data-aos="fade-up" data-aos-duration="200">
-          Let’s Build Your Digital Success Story
+          Empower Your Business with Our Innovative Products
         </h2>
         <p class="text-gray-600 text-lg font-medium max-w-xl lg:px-4 px-0" data-aos="fade-up" data-aos-duration="300">
-          From websites to mobile apps, SEO, and branding — we deliver tailor-made solutions that help your
-          business grow online.
+          Discover powerful, scalable, and intuitive digital products designed to simplify your operations, enhance
+          productivity, and drive growth.
         </p>
       </div>
 
       <!-- CTA Buttons -->
       <div class="flex flex-col sm:flex-row justify-center gap-3 pt-6">
-        <a href="/contact"
+        <a href="/products"
           class="inline-flex items-center justify-center gap-2 px-5 py-3 text-white text-base font-medium bg-primary hover:bg-primary-hover rounded-lg shadow-md transition duration-300"
           data-aos="zoom-in" data-aos-duration="400">
-          <span>Get a Free Consultation</span>
+          <span>Explore Our Products</span>
           <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"
             stroke-linecap="round" stroke-linejoin="round" class="text-white">
             <line x1="7" y1="17" x2="17" y2="7"></line>
@@ -310,16 +306,17 @@
           </svg>
         </a>
 
-        <a href="/services"
+        <a href="/contact"
           class="inline-flex items-center justify-center gap-2 px-5 py-3 text-gray-100 bg-gray-900 hover:bg-gray-800 rounded-lg text-base font-medium shadow-sm transition duration-300"
           data-aos="zoom-in" data-aos-duration="600">
-          <span>Explore Our Services</span>
+          <span>Request a Demo</span>
         </a>
       </div>
 
     </div>
   </div>
-  <!-- cta wrapper -->
+  <!-- CTA Wrapper -->
+
 
 </div>
 
