@@ -1,0 +1,272 @@
+<main class="bg-gray-100 font-montserrat min-h-screen">
+
+    <!-- Product Hero Section -->
+    <div class="page-title bg-primary/10 lg:pt-20 pt-16 border-b border-gray-800">
+        <div class="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-14 lg:px-14 xl:px-20 2xl:px-24 lg:py-24 py-16">
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+
+                <!-- Product Image -->
+                <div class="flex justify-center">
+                    <img src="/assets/images/advanced_billing_tool.png" alt="Advanced Billing Tool"
+                        class="rounded-2xl shadow-lg w-full max-w-xl border border-gray-200">
+                </div>
+
+                <!-- Product Info -->
+                <div>
+                    <h1 class="text-5xl font-bold mb-6">Advanced Billing Tool</h1>
+                    <p class="text-xl text-gray-700 mb-6 leading-relaxed">
+                        A powerful invoicing and payment management system with automated recurring billing, financial
+                        insights, and secure payment integrations.
+                    </p>
+
+                    <!-- Features List -->
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-file-invoice-dollar text-primary mr-3 text-xl"></i>
+                            Automated Invoicing & Subscriptions
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-shield-alt text-primary mr-3 text-xl"></i>
+                            Secure Payment Gateway Integration
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-chart-line text-primary mr-3 text-xl"></i>
+                            Detailed Financial Reporting & Analytics
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-users text-primary mr-3 text-xl"></i>
+                            Client Management Dashboard
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-bell text-primary mr-3 text-xl"></i>
+                            Real-Time Notifications & Alerts
+                        </li>
+                    </ul>
+
+                    <!-- Pricing -->
+                    <div class="flex items-baseline gap-3 mb-8">
+                        <span class="text-4xl font-bold text-primary">$49</span>
+                        <span class="text-gray-500">/ month</span>
+                    </div>
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button
+                            class="bg-primary text-white px-5 py-3 rounded-lg font-medium hover:bg-primary-dark transition-colors">
+                            <i class="fas fa-shopping-cart mr-2"></i> Subscribe Now
+                        </button>
+                        <button
+                            class="border-2 border-primary text-primary px-5 py-3 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors">
+                            <i class="fas fa-calendar-alt mr-2"></i> Request a Demo
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photo Gallery Slider Section -->
+    <section class="max-w-6xl mx-auto px-4 py-16 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+
+        <!-- Left Side Slider (narrower) -->
+        <div class="lg:w-1/2 w-full">
+            <div id="screenshot-slider" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+
+                        <!-- Screenshot 1 -->
+                        <li class="splide__slide">
+                            <div class="overflow-hidden rounded-2xl shadow-lg">
+                                <img src="/assets/images/dashboard_view.png" alt="Dashboard View"
+                                    class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105 rounded-2xl cursor-pointer"
+                                    onclick="openLightbox(this.src)">
+                                <div class="p-4 bg-white rounded-b-2xl">
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Dashboard View</h3>
+                                    <p class="text-gray-600 text-sm">
+                                        Overview of all client accounts, invoices, and payment statuses in one place.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Screenshot 2 -->
+                        <li class="splide__slide">
+                            <div class="overflow-hidden rounded-2xl shadow-lg">
+                                <img src="/assets/images/Invoice_generation.png" alt="Invoice Generation"
+                                    class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105 rounded-2xl cursor-pointer"
+                                    onclick="openLightbox(this.src)">
+                                <div class="p-4 bg-white rounded-b-2xl">
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Invoice Generation</h3>
+                                    <p class="text-gray-600 text-sm">
+                                        Create detailed invoices, automated billing, recurring payments, tax
+                                        calculation, and payment tracking.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Screenshot 3 -->
+                        <li class="splide__slide">
+                            <div class="overflow-hidden rounded-2xl shadow-lg">
+                                <img src="/assets/images/payment_reports.png" alt="Payment Reports"
+                                    class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105 rounded-2xl cursor-pointer"
+                                    onclick="openLightbox(this.src)">
+                                <div class="p-4 bg-white rounded-b-2xl">
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Payment Reports</h3>
+                                    <p class="text-gray-600 text-sm">
+                                        Detailed financial analytics and downloadable reports in PDF or Excel formats.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Screenshot 4 -->
+                        <li class="splide__slide">
+                            <div class="overflow-hidden rounded-2xl shadow-lg">
+                                <img src="/assets/images/client_management.png" alt="Client Management"
+                                    class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105 rounded-2xl cursor-pointer"
+                                    onclick="openLightbox(this.src)">
+                                <div class="p-4 bg-white rounded-b-2xl">
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Client Management</h3>
+                                    <p class="text-gray-600 text-sm">
+                                        Manage client profiles, payment history, notifications, appointments, tasks, and
+                                        reports with ease.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side Content -->
+        <div class="lg:w-1/2 text-center lg:text-left">
+            <h2 class="text-3xl font-bold mb-4 text-gray-800">Product Screenshots</h2>
+            <p class="text-gray-600 mb-6">
+                Explore the key features of our platform through these screenshots showcasing dashboards, invoices,
+                payments, and client management.
+            </p>
+            <!-- Slogan -->
+            <p class="text-green-600 font-semibold text-xl mt-4">
+                Green Code. Gentle Devices.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden z-50"
+        onclick="closeLightbox()">
+        <img id="lightbox-img" src="" class="max-h-[90%] max-w-[90%] rounded-2xl shadow-lg">
+    </div>
+
+
+
+
+    <!-- Product Details Tabs -->
+    <section class="max-w-6xl mx-auto px-4 py-20">
+        <div class="grid lg:grid-cols-3 gap-10">
+
+            <!-- Overview -->
+            <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition">
+                <h3 class="text-2xl font-bold mb-4 flex items-center">
+                    <i class="fas fa-info-circle text-primary mr-2"></i> Overview
+                </h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Our Advanced Billing Tool simplifies recurring payments, helps you manage clients, and automates
+                    your billing cycle. Perfect for SaaS companies, freelancers, and agencies.
+                </p>
+            </div>
+
+            <!-- Key Benefits -->
+            <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition">
+                <h3 class="text-2xl font-bold mb-4 flex items-center">
+                    <i class="fas fa-star text-primary mr-2"></i> Key Benefits
+                </h3>
+                <ul class="space-y-3 text-gray-600">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Saves time with automation</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Reduces payment delays</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Enhances financial transparency</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Scales with your business growth</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> 24/7 Customer Support</li>
+                </ul>
+            </div>
+
+            <!-- Technical Specs -->
+            <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition">
+                <h3 class="text-2xl font-bold mb-4 flex items-center">
+                    <i class="fas fa-cogs text-primary mr-2"></i> Technical Specs
+                </h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li><i class="fas fa-desktop text-primary mr-2"></i><strong>Platform:</strong> Web, Cloud</li>
+                    <li><i class="fas fa-credit-card text-primary mr-2"></i><strong>Integration:</strong> Stripe,
+                        PayPal, Razorpay</li>
+                    <li><i class="fas fa-file-export text-primary mr-2"></i><strong>Reports:</strong> PDF & Excel Export
+                    </li>
+                    <li><i class="fas fa-lock text-primary mr-2"></i><strong>Security:</strong> End-to-End Encryption
+                    </li>
+                    <li><i class="fas fa-cloud text-primary mr-2"></i><strong>Hosting:</strong> 99.9% Uptime SLA</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-primary py-20 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6 flex items-center justify-center gap-2">
+                <span class="material-icons text-white text-5xl">rocket_launch</span>
+                Start Managing Your Billing Smarter
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                Get started today and streamline your invoicing with automated, secure, and efficient billing solutions.
+                <br> Whether you're a startup or an enterprise, our tool grows with you.
+            </p>
+            <button
+                class="bg-white text-primary px-5 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors flex items-center justify-center gap-2 mx-auto">
+                <span class="material-icons text-primary">rocket_launch</span>
+                Try It Free for 30 Days
+            </button>
+
+        </div>
+    </section>
+
+</main>
+
+
+
+<!-- Splide JS -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
+
+<script>
+    function openLightbox(src) {
+        document.getElementById('lightbox-img').src = src;
+        document.getElementById('lightbox').classList.remove('hidden');
+    }
+
+    function closeLightbox() {
+        document.getElementById('lightbox').classList.add('hidden');
+    }
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#screenshot-slider', {
+            type: 'loop',
+            perPage: 1,        // show fewer images per slide since width is smaller
+            focus: 'center',
+            gap: '1rem',
+            autoplay: true,
+            arrows: true,
+            pagination: false,
+            breakpoints: {
+                1024: { perPage: 1 },
+                640: { perPage: 1 }
+            }
+        }).mount();
+    });
+</script>

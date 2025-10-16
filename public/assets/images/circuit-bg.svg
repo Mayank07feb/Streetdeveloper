@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" fill="none">
+  <rect width="1920" height="1080" fill="none"/>
+  <g stroke="#00FFCC" stroke-width="1" opacity="0.3">
+    <path d="M100 100h100v100h100v100h100v100h100v100h100" />
+    <path d="M500 200v100h100v100h100v100h100" />
+    <circle cx="400" cy="200" r="4" fill="#00FFCC"/>
+    <circle cx="700" cy="400" r="4" fill="#00FFCC"/>
+    <circle cx="900" cy="500" r="4" fill="#00FFCC"/>
+    <circle cx="1200" cy="700" r="4" fill="#00FFCC"/>
+    <path d="M300 800h200v-100h100v-100h200v-100" />
+    <circle cx="300" cy="800" r="4" fill="#00FFCC"/>
+    <circle cx="600" cy="700" r="4" fill="#00FFCC"/>
+    <circle cx="1000" cy="500" r="4" fill="#00FFCC"/>
+  </g>
+</svg>
